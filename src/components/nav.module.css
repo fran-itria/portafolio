@@ -1,0 +1,27 @@
+.nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(97, 255, 247);
+    width: 100%;
+}
+
+.elements{
+    margin-right: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.active{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-bottom: solid white 2px;
+}
