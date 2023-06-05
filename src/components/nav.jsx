@@ -9,6 +9,7 @@ export default function Nav() {
 
   return (
       <nav className={style.nav}>
+        <h1 className={style.name}>Franco Itria</h1>
         <div className={style.elements}>
           <a
             href="#about"

@@ -1,7 +1,14 @@
 .App {
   text-align: center;
   /* background-color: rgb(167, 167, 167); */
-  background: linear-gradient(to right, black, rgb(131, 0, 0));
+  /* background: linear-gradient(to top, rgb(131, 131, 131), rgb(131, 0, 0)); */
+}
+
+h1{
+  color: white;
+}
+p{
+  color: white;
 }
 
 .App-logo {

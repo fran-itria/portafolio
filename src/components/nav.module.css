@@ -2,11 +2,19 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    background-color: rgb(97, 255, 247);
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(97, 255, 247); */
+    background: rgb(75, 0, 0);
+    color: white;
     width: 100%;
 }
 
+.name{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .elements{
     margin-right: 50px;
     width: 30%;
@@ -16,12 +24,12 @@
 
 .button{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 .active{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
-    border-bottom: solid white 2px;
+    border-bottom: solid rgb(255, 139, 139) 3px;
 }
