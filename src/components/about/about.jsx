@@ -1,4 +1,4 @@
-import imagen from "../../TOR_1000.jpg";
+import imagen from "../../images/Me.jpg";
 import style from "./about.module.css";
 
 export default function About() {
