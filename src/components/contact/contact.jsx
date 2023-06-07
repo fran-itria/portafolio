@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./contact.module.css";
+import axios from "axios";
 
 export default function Contact() {
   const [inputs, setInputs] = useState({
@@ -13,7 +14,10 @@ export default function Contact() {
   };
 
   const submit = async (event) => {
-    event.prevetnDefault();
+    event.preventDefault();
+    const response = await axios.post("http://localhost:3001/contact", inputs);
+    console.log(response);
+    if (response.status == 200) window.alert("Mensaje enviado exitosamente");
   };
 
   return (
