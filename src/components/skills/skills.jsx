@@ -4,9 +4,7 @@ import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import {
   SiJavascript,
   SiNextdotjs,
-  SiPostgresql,
   SiReact,
-  SiRedux,
   SiSequelize,
   SiTypescript,
 } from "react-icons/si";
