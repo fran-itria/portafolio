@@ -1,24 +1,57 @@
 .contact{
-    height: 50vh;
+    height: 60vh;
     background: rgb(75, 0, 0);
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title{
+   border-bottom: solid rgb(255, 139, 139) 5px;
+   font-size: 40px;
+   margin-bottom: 10px;
+   width: fit-content;
+}
+.header{
+    width: 40%;
+    display: flex;
 }
 .form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100%;
+    width: 100%;
 }
 .info{
     width: 40%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .label{
     width: 40%;
     text-align: left;
+    font-size: 21px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
 }
+.input{
+    font-size: 15px;
+    border: none;
+    border: solid 3px rgb(0, 255, 0);
+    padding: 3px;
+    /* height: 50px; */
+}
+.inputError{
+    font-size: 15px;
+    border: none;
+    border: solid 3px rgb(255, 0, 0);
+    padding: 3px;
+}
+
 .mensaje{
     display: flex;
     flex-direction: column;
@@ -30,8 +63,33 @@
     width: 40%;
     height: 200px;
 }
+.areaError{
+    width: 40%;
+    height: 200px;
+    border: solid red 3px;
+}
 .button{
     margin-top: 20px;
     display: flex;
     width: 40%;
 }
+
+.error{
+    color: rgb(255, 0, 0);
+    width: fit-content;
+    margin-top: 10px;
+}
+.errorMensaje{
+    width: 40%;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* .errorMessage{
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    text-align: left;
+    background: rgb(156, 156, 156);
+    color: rgb(255, 0, 0);
+} */

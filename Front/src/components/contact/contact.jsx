@@ -8,10 +8,37 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [errors, setErrors] = useState({});
+
+  const validate = (inputs, setErrors) => {
+    let error = {};
+    const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3}$/i
+
+    if (inputs.name.length == 0) {
+      error.name = "Campo obligatorio";
+    } else delete error.name;
+
+    if (inputs.email.length == 0) {
+      error.email = "Campo obligatorio";
+    } else if (!regexEmail.test(inputs.email)){
+      error.email = "Debe ser un correo válido";
+    } else delete error.email;
+
+    if (inputs.message.length == 0) {
+      error.message = "Campo obligatorio";
+    } else delete error.message;
+
+    setErrors(error);
+  };
+
   const handleInput = (event) => {
     const { name, value } = event.target;
     setInputs({ ...inputs, [name]: value });
+    validate({ ...inputs, [name]: value }, setErrors, errors);
   };
+
+  useEffect(() => validate(inputs, setErrors, errors), []);
+  useEffect(() => console.log(errors), [errors]);
 
   const submit = async (event) => {
     event.preventDefault();
@@ -22,36 +49,67 @@ export default function Contact() {
 
   return (
     <section id="contact" className={style.contact}>
-      <h1>Contáctame</h1>
+      <div className={style.header}>
+        <h1 className={style.title}>Contáctame</h1>
+      </div>
       <form className={style.form} onSubmit={(event) => submit(event)}>
         <div className={style.info}>
           <div>
-            <label>Nombre: </label>
+            <label className={style.label}>Nombre: </label>
             <input
               type="text"
               name="name"
               onChange={(event) => handleInput(event)}
+              className={errors.name ? style.inputError : style.input}
             ></input>
+            {errors.name ? (
+              <div className={style.error}>
+                <b> * {errors.name} </b>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
           <div>
-            <label>Correo: </label>
+            <label className={style.label}>Correo: </label>
             <input
               type="email"
               name="email"
               onChange={(event) => handleInput(event)}
+              className={errors.email ? style.inputError : style.input}
             ></input>
+            {errors.email ? (
+              <div className={style.error}>
+                <b> * {errors.email} </b>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
         <div className={style.mensaje}>
           <label className={style.label}>Mensaje: </label>
           <textarea
-            className={style.area}
+            className={errors && errors.message ? style.areaError : style.area}
             name="message"
             onChange={(event) => handleInput(event)}
           ></textarea>
+          {errors.message ? (
+            <div className={style.errorMensaje}>
+              <b> * {errors.message} </b>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
         <div className={style.button}>
-          <button type="submit">Enviar mensaje</button>
+          {Object.keys(errors).length > 0 ? (
+            <button type="submit" disabled>
+              Enviar mensaje
+            </button>
+          ) : (
+            <button type="submit">Enviar mensaje</button>
+          )}
         </div>
       </form>
     </section>
