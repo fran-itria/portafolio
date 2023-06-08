@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./contact.module.css";
 import axios from "axios";
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md'
 
 export default function Contact() {
   const [inputs, setInputs] = useState({
@@ -115,6 +116,9 @@ export default function Contact() {
             </button>
           )}
         </div>
+      {/* <a href="#about">
+        <MdKeyboardDoubleArrowUp size={70} color="white" className={style.top}/>
+      </a> */}
       </form>
     </section>
   );
