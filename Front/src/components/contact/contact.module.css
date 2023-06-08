@@ -41,15 +41,16 @@
 .input{
     font-size: 15px;
     border: none;
-    border: solid 3px rgb(0, 255, 0);
+    border: solid 2px rgb(0, 255, 0);
     padding: 3px;
-    /* height: 50px; */
+    border-radius: 20px;
 }
 .inputError{
     font-size: 15px;
     border: none;
-    border: solid 3px rgb(255, 0, 0);
+    border: solid 2px rgb(255, 0, 0);
     padding: 3px;
+    border-radius: 25px;
 }
 
 .mensaje{
@@ -62,11 +63,15 @@
 .area{
     width: 40%;
     height: 200px;
+    border-radius: 0px;
+    font-size: 15px;
+    border: solid 2px rgb(0, 255, 0);
 }
 .areaError{
     width: 40%;
     height: 200px;
-    border: solid red 3px;
+    border: solid red 2px;
+    border-radius: 0px;
 }
 .button{
     margin-top: 20px;
@@ -85,11 +90,28 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
-/* .errorMessage{
-    display: flex;
-    justify-content: center;
-    width: 170px;
-    text-align: left;
-    background: rgb(156, 156, 156);
-    color: rgb(255, 0, 0);
-} */
+
+.enviar{
+    font-size: 17px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(139, 255, 139);
+    border: none;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0 -5px rgb(0, 128, 0);
+}
+.enviar:hover{
+    box-shadow: 0 -3px rgb(0, 128, 0);
+    cursor: pointer;
+}
+.enviar:active{
+    box-shadow: 0 0px rgb(0, 128, 0);
+    cursor: pointer;
+}
+.enviar:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: 0 0px rgb(0, 128, 0);
+    background-color: rgb(255, 139, 139);
+}

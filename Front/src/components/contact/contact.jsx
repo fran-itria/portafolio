@@ -12,7 +12,7 @@ export default function Contact() {
 
   const validate = (inputs, setErrors) => {
     let error = {};
-    const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3}$/i
+    const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3}$/i;
 
     if (inputs.name.length == 0) {
       error.name = "Campo obligatorio";
@@ -20,7 +20,7 @@ export default function Contact() {
 
     if (inputs.email.length == 0) {
       error.email = "Campo obligatorio";
-    } else if (!regexEmail.test(inputs.email)){
+    } else if (!regexEmail.test(inputs.email)) {
       error.email = "Debe ser un correo válido";
     } else delete error.email;
 
@@ -77,6 +77,7 @@ export default function Contact() {
               name="email"
               onChange={(event) => handleInput(event)}
               className={errors.email ? style.inputError : style.input}
+              placeholder="ejemplo@gmail.com"
             ></input>
             {errors.email ? (
               <div className={style.error}>
@@ -93,6 +94,7 @@ export default function Contact() {
             className={errors && errors.message ? style.areaError : style.area}
             name="message"
             onChange={(event) => handleInput(event)}
+            spellCheck='true'
           ></textarea>
           {errors.message ? (
             <div className={style.errorMensaje}>
@@ -104,11 +106,13 @@ export default function Contact() {
         </div>
         <div className={style.button}>
           {Object.keys(errors).length > 0 ? (
-            <button type="submit" disabled>
+            <button type="submit" disabled className={style.enviar}>
               Enviar mensaje
             </button>
           ) : (
-            <button type="submit">Enviar mensaje</button>
+            <button type="submit" className={style.enviar}>
+              Enviar mensaje
+            </button>
           )}
         </div>
       </form>
