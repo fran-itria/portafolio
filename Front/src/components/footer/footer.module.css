@@ -1,0 +1,54 @@
+.nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(75, 0, 0);
+    color: white;
+    width: 100%;
+    box-shadow: 0 -4px rgb(255, 139, 139);
+}
+
+.name{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.elements{
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.github{
+    color: white;
+    padding: 5px;
+    transition: 1s;
+}
+.github:hover{
+    color: black;
+    transition: 0.5s;
+}
+.linkedin{
+    color: white;
+    padding: 5px;
+    transition: 0.5s
+}
+.linkedin:hover{
+    color: #0e76a8;
+    transition: 0.5s;
+}
+
+.gmail{
+    color: white;
+    padding: 5px;
+    transition: 0.5s
+}
+.gmail:hover{
+    color: #c71610;
+    transition: 0.5s;
+}
