@@ -10,10 +10,10 @@ export default function Footer() {
       Franco Itria
       </h1>
       <div className={style.elements}>
-        <a href="https://github.com/fran-itria">
+        <a href="https://github.com/fran-itria" target="_blank">
           <IoLogoGithub size={40} className={style.github}/>
         </a>
-        <a href="https://www.linkedin.com/in/francoitria/">
+        <a href="https://www.linkedin.com/in/francoitria/" target="_blank">
           <FaLinkedinIn size={40} className={style.linkedin}/>
         </a>
         <a href="mailto:francoitria01@gmail.com">
