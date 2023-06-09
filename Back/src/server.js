@@ -3,12 +3,11 @@ const cors = require("cors");
 const transporter = require("./index");
 const server = express();
 const PORT = process.env.PORT;
-const URL_BASE = process.env.DEPLOY_FRONT || "http://localhost:3001";
 
 server.use(express.json());
 server.use(
   cors({
-    origin: URL_BASE,
+    origin: '*',
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
