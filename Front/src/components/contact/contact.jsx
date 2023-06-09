@@ -10,8 +10,7 @@ export default function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState({});
-  const URL_BASE = "https://francoitria.vercel.app" || "http://localhost:3001"
-
+  
   const validate = (inputs, setErrors) => {
     let error = {};
     const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3}$/i;
@@ -19,29 +18,30 @@ export default function Contact() {
     if (inputs.name.length == 0) {
       error.name = "Campo obligatorio";
     } else delete error.name;
-
+    
     if (inputs.email.length == 0) {
       error.email = "Campo obligatorio";
     } else if (!regexEmail.test(inputs.email)) {
       error.email = "Debe ser un correo válido";
     } else delete error.email;
-
+    
     if (inputs.message.length == 0) {
       error.message = "Campo obligatorio";
     } else delete error.message;
-
+    
     setErrors(error);
   };
-
+  
   const handleInput = (event) => {
     const { name, value } = event.target;
     setInputs({ ...inputs, [name]: value });
     validate({ ...inputs, [name]: value }, setErrors, errors);
   };
-
+  
   useEffect(() => validate(inputs, setErrors, errors), []);
   useEffect(() => console.log(errors), [errors]);
-
+  
+  const URL_BASE = "https://francoitria-portafolio-back.vercel.app"
   const submit = async (event) => {
     event.preventDefault();
     const response = await axios.post(`${URL_BASE}/contact`, inputs);
