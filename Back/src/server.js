@@ -9,7 +9,7 @@ server.use(express.json());
 server.use(
   cors({
     origin: URL_BASE,
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
