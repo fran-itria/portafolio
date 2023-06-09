@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const transporter = require("./index");
 const server = express();
-const PORT = 3001;
-const URL_BASE = "https://francoitria.vercel.app" || "http://localhost:3000"
+const PORT = process.env.PORT;
+const URL_BASE = process.env.DEPLOY_FRONT || "http://localhost:3001";
 
 server.use(express.json());
 server.use(
