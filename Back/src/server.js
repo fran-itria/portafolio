@@ -5,7 +5,14 @@ const server = express();
 const PORT = 3001;
 
 server.use(express.json());
-server.use(cors());
+server.use(
+  cors({
+    origin: "https://francoitria.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 server.post("/contact", async (req, res) => {
   const { email, name, message } = req.body;
   try {
