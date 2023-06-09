@@ -10,6 +10,7 @@ export default function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const URL_BASE = "https://francoitria.vercel.app" || "http://localhost:3001"
 
   const validate = (inputs, setErrors) => {
     let error = {};
@@ -43,7 +44,7 @@ export default function Contact() {
 
   const submit = async (event) => {
     event.preventDefault();
-    const response = await axios.post("http://localhost:3001/contact", inputs);
+    const response = await axios.post(`${URL_BASE}/contact`, inputs);
     console.log(response);
     if (response.status == 200) window.alert("Mensaje enviado exitosamente");
   };
