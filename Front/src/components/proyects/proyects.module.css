@@ -7,12 +7,13 @@
 }
 .header{
     width: 80%;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 .title{
    border-bottom: solid rgb(255, 139, 139) 5px;
    font-size: 40px;
-   margin-bottom: 10px;
+   margin-bottom: 0;
    width: fit-content;
 }
 .proyect{
@@ -20,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .info{
     display: flex;

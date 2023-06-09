@@ -4,7 +4,7 @@ import style from "./about.module.css";
 export default function About() {
   return (
     <section id="about" className={style.about}>
-      <img src={imagen} className={style.img} /> {/* Imagen sobre mi */}
+      <img src={imagen} className={style.img} />
       <div className={style.info}>
         <h1 className={style.title}>Sobre mí</h1>
         <p className={style.text}>

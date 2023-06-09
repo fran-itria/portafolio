@@ -1,11 +1,11 @@
 .nav{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgb(97, 255, 247); */
     background: rgb(75, 0, 0);
+    box-shadow: 0 4px rgb(255, 139, 139);
     color: white;
     width: 100%;
 }
@@ -31,5 +31,5 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-    border-bottom: solid rgb(255, 139, 139) 3px;
+    border-bottom: solid rgb(206, 0, 0) 3px;
 }
