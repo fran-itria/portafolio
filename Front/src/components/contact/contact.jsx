@@ -41,7 +41,7 @@ export default function Contact() {
   useEffect(() => validate(inputs, setErrors, errors), []);
   useEffect(() => console.log(errors), [errors]);
   
-  const URL_BASE = "https://back-portafolio.vercel.app"
+  const URL_BASE = "https://back-portafolio.vercel.app" || "http://localhost:3001"
   const submit = async (event) => {
     event.preventDefault();
     const response = await axios.post(`${URL_BASE}/contact`, inputs);

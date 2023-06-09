@@ -3,11 +3,12 @@ const cors = require("cors");
 const transporter = require("./index");
 const server = express();
 const PORT = 3001;
+const URL_BASE = "https://francoitria.vercel.app" || "http://localhost:3000"
 
 server.use(express.json());
 server.use(
   cors({
-    origin: "https://francoitria.vercel.app",
+    origin: URL_BASE,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
