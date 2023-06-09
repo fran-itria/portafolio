@@ -13,7 +13,7 @@ server.use(
   })
 );
 
-server.post("/contact", async (req, res) => {
+server.post("https://francoitria-portafolio-back.vercel.app/contact", async (req, res) => {
   const { email, name, message } = req.body;
   try {
     const mail = {
