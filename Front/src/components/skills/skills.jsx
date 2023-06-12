@@ -29,7 +29,7 @@ export default function Skills() {
         </div>
         <div>
           <SiJavascript color="#f0db4f" size={100} />
-          <p> Javascript </p>
+          <p> JavaScript </p>
         </div>
         <div>
           <SiReact color="#7cc5d9" size={100} />

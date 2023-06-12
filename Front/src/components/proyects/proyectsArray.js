@@ -14,7 +14,7 @@ const proyects = [
         "HTML",
         "CSS",
         "Tailwind",
-        "Javascript",
+        "JavaScript",
         "Node.js",
         "Next.js",
         "Prisma",
@@ -30,7 +30,7 @@ const proyects = [
       tecnologias: [
         "HTML",
         "CSS",
-        "Javascript",
+        "JavaScript",
         "React",
         "Express",
         "Sequelize",
@@ -45,7 +45,7 @@ const proyects = [
       tecnologias: [
         "HTML",
         "CSS",
-        "Javascript",
+        "JavaScript",
         "React",
         "Express",
         "Sequelize",
@@ -57,7 +57,7 @@ const proyects = [
       url: "https://github.com/fran-itria/marvel-app",
       description:
         "Aplicacion front end con la api de marvel que trae los comics, personajes y algunas series, permite ver el detalle de cada comic y de cada personaje mostrando los comics de los cuales participa",
-      tecnologias: ["HTML", "CSS", "Javascript", "React"],
+      tecnologias: ["HTML", "CSS", "JavaScript", "React"],
     },
   ];
 
