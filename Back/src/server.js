@@ -8,6 +8,10 @@ server.use(express.json());
 server.use(
   cors()
 );
+server.options(
+  "*",
+  cors()
+);
 
 server.post("/contact", async (req, res) => {
   const { email, name, message } = req.body;
