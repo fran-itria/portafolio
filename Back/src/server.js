@@ -48,4 +48,8 @@ server.post("/contact", async (req, res) => {
   }
 });
 
+server.get("/", (req, res) => {
+  res.status(200).send("OK")
+})
+
 server.listen(PORT, () => console.log(`Correindo en el puerto ${PORT}`));
