@@ -10,7 +10,7 @@ export default function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState();
-  const URL_BASE = "https://back-portafolio.vercel.app" || "http://localhost:3001";
+  const URL_BASE = "https://portafolio-back-3gdb.onrender.com" || "http://localhost:3001";
 
   const validate = (inputs, setErrors) => {
     let error = {};
@@ -43,9 +43,9 @@ export default function Contact() {
   
   const submit = async (event) => {
     event.preventDefault();
-    window.alert('Método para contactarte no implementado aún')
-    // const response = await axios.post(`${URL_BASE}/contact`, inputs);
-    // if (response.status == 200) window.alert("Mensaje enviado exitosamente");
+    // window.alert('Método para contactarte no implementado aún')
+    const response = await axios.post(`${URL_BASE}/contact`, inputs);
+    if (response.status == 200) window.alert("Mensaje enviado exitosamente");
   };
 
   return (
@@ -62,6 +62,7 @@ export default function Contact() {
               name="name"
               onChange={(event) => handleInput(event)}
               className={errors && errors.name ? style.inputError : style.input}
+              autoComplete="on"
             ></input>
             {errors && errors.name ? (
               <div className={style.error}>
@@ -81,6 +82,7 @@ export default function Contact() {
                 errors && errors.email ? style.inputError : style.input
               }
               placeholder="ejemplo@gmail.com"
+              autoComplete="on"
             ></input>
             {errors && errors.email ? (
               <div className={style.error}>
