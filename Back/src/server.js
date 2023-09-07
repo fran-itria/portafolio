@@ -6,11 +6,7 @@ const PORT = process.env.PORT;
 
 server.use(express.json());
 server.use(
-  cors({
-    origin: '*',
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
+  cors()
 );
 
 server.post("/contact", async (req, res) => {
