@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable eqeqeq */
+/* eslint-disable jsx-a11y/alt-text */
 import style from "./proyects.module.css";
 import { IoLogoGithub } from "react-icons/io";
-import { MdDoubleArrow, MdOutlineDoubleArrow } from "react-icons/md";
+import { MdDoubleArrow } from "react-icons/md";
 import proyects from "./proyectsArray.js";
 
 export default function Proyects() {
@@ -15,7 +18,7 @@ export default function Proyects() {
           let { tecnologias } = proyect;
           tecnologias = tecnologias.join(" | ");
           return (
-            <div className={style.info}>
+            <div className={style.info} key={title}>
               <img src={image} />
               <div className={style.text}>
                 <h3 className={style.titleProyect}>{title}</h3>

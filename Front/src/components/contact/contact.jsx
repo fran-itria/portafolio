@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable eqeqeq */
 import { useEffect, useState } from "react";
 import style from "./contact.module.css";
 import axios from "axios";
-import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 export default function Contact() {
   const [inputs, setInputs] = useState({
@@ -10,7 +11,8 @@ export default function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState();
-  const URL_BASE = "https://portafolio-back-3gdb.onrender.com" || "http://localhost:3001";
+  const URL_BASE =
+    "https://portafolio-back-3gdb.onrender.com" || "http://localhost:3001";
 
   const validate = (inputs, setErrors) => {
     let error = {};
@@ -40,7 +42,7 @@ export default function Contact() {
   };
 
   useEffect(() => validate(inputs, setErrors), []);
-  
+
   const submit = async (event) => {
     event.preventDefault();
     // window.alert('Método para contactarte no implementado aún')
