@@ -1,38 +1,44 @@
-.proyects{
-    height: 100vh;
+.proyects {
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
-.header{
+
+.header {
     width: 80%;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
-.title{
-   border-bottom: solid rgb(255, 139, 139) 5px;
-   font-size: 40px;
-   margin-bottom: 0;
-   width: fit-content;
+
+.title {
+    border-bottom: solid rgb(255, 139, 139) 5px;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    width: fit-content;
+    color: white;
 }
-.proyect{
+
+.proyect {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     /* border: solid white 2px; */
     border-radius: 20px 0 0 20px;
     width: 80%;
     background-color: rgb(75, 0, 0);
     box-shadow: 12px 0 0 rgb(255, 139, 139);
+    height: 165px;
 }
 
 .proyect img {
@@ -40,21 +46,25 @@
     height: 150px;
     margin-left: 10px;
     border-radius: 20px 0 0 20px;
+    margin-top: 0;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 15px;
     color: black;
 }
-.titleProyect{
+
+.titleProyect {
     display: flex;
     margin: 0;
     margin-top: 10px;
     color: white;
 }
-.description{
+
+.description {
     margin-top: 10px;
     /* width: 70%; */
     margin-bottom: 0;
@@ -63,16 +73,88 @@
     justify-content: center;
     color: white;
 }
-.tecnologias p:last-child{
+
+.pTecno {
     color: white;
     font-weight: bold;
     margin-top: 10px;
-}
-.text a{
     margin-bottom: 5px;
 }
-.toolMatch{
+
+.pTecnoTool {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.text a {
+    margin-bottom: 5px;
+}
+
+.toolMatch {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+@media (max-width: 425px) {
+    .proyects {
+        height: 100%;
+        width: 425px;
+        align-items: center;
+    }
+
+    .header {
+        width: fit-content;
+        margin-bottom: 0px;
+    }
+
+    .proyect {
+        align-items: center;
+    }
+
+    .info {
+        width: 95%;
+        height: 130px;
+        box-shadow: 3px 3px 0 rgb(255, 139, 139);
+    }
+
+    .proyect img {
+        display: none;
+    }
+
+    .text {
+        height: 130px;
+    }
+
+    .titleProyect {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .description {
+        width: 100%;
+        margin-top: 5px;
+        overflow: auto;
+        line-height: 1;
+        font-size: 15px;
+    }
+
+    .pTecno {
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .pTecnoTool {
+        font-size: 10px;
+        margin-left: 0px;
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
 }
