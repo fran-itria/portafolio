@@ -53,7 +53,7 @@ export default function Contact() {
   return (
     <section id="contact" className={style.contact}>
       <div className={style.header}>
-        <h1 className={style.title}>Contáctame</h1>
+        <h1 className="title">Contáctame</h1>
       </div>
       <form className={style.form} onSubmit={(event) => submit(event)}>
         <div className={style.info}>

@@ -10,7 +10,7 @@ export default function Proyects() {
   return (
     <section id="proyects" className={style.proyects}>
       <div className={style.header}>
-        <h1 className={style.title}>Proyectos</h1>
+        <h1 className="title">Proyectos</h1>
       </div>
       <div className={style.proyect}>
         {proyects.map((proyect) => {
@@ -24,7 +24,11 @@ export default function Proyects() {
                 <h3 className={style.titleProyect}>{title}</h3>
                 <p className={style.description}>{description}</p>
                 <div className={style.tecnologias}>
-                  <p>
+                  <p
+                    className={
+                      title == "ToolMatch" ? style.pTecnoTool : style.pTecno
+                    }
+                  >
                     <b>Tecnologias:</b> {tecnologias}
                   </p>
                 </div>
