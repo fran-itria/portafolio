@@ -1,4 +1,4 @@
-.contact{
+.contact {
     height: 60vh;
     background: rgb(75, 0, 0);
     color: white;
@@ -7,17 +7,20 @@
     align-items: center;
     justify-content: flex-start;
 }
-.title{
-   border-bottom: solid rgb(255, 139, 139) 5px;
-   font-size: 40px;
-   margin-bottom: 10px;
-   width: fit-content;
+
+.title {
+    border-bottom: solid rgb(255, 139, 139) 5px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    width: fit-content;
 }
-.header{
+
+.header {
     width: 40%;
     display: flex;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,27 +28,31 @@
     height: 100%;
     width: 100%;
 }
-.info{
+
+.info {
     width: 40%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.label{
+
+.label {
     width: 40%;
     text-align: left;
     font-size: 21px;
     font-weight: bold;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-.input{
+
+.input {
     font-size: 15px;
     border: none;
     border: solid 2px rgb(0, 255, 0);
     padding: 3px;
     border-radius: 20px;
 }
-.inputError{
+
+.inputError {
     font-size: 15px;
     border: none;
     border: solid 2px rgb(255, 0, 0);
@@ -53,45 +60,49 @@
     border-radius: 25px;
 }
 
-.mensaje{
+.mensaje {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.area{
+
+.area {
     width: 40%;
     height: 200px;
     border-radius: 0px;
     font-size: 15px;
     border: solid 2px rgb(0, 255, 0);
 }
-.areaError{
+
+.areaError {
     width: 40%;
     height: 200px;
     border: solid red 2px;
     border-radius: 0px;
 }
-.button{
+
+.button {
     margin-top: 20px;
     display: flex;
     width: 40%;
 }
 
-.error{
+.error {
     color: rgb(255, 0, 0);
     width: fit-content;
     margin-top: 10px;
 }
-.errorMensaje{
+
+.errorMensaje {
     width: 40%;
     text-align: left;
     margin-top: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
-.enviar{
+.enviar {
     font-size: 17px;
     border-radius: 20px;
     padding: 5px;
@@ -101,21 +112,26 @@
     color: black;
     box-shadow: 0 -5px rgb(0, 128, 0);
 }
-.enviar:hover{
+
+.enviar:hover {
     box-shadow: 0 -3px rgb(0, 128, 0);
     cursor: pointer;
 }
-.enviar:active{
+
+.enviar:active {
     box-shadow: 0 0px rgb(0, 128, 0);
     cursor: pointer;
 }
-.enviar:disabled{
+
+.enviar:disabled {
     opacity: 0.5;
     cursor: not-allowed;
     box-shadow: 0 0px rgb(0, 128, 0);
     background-color: rgb(255, 139, 139);
+    margin-top: 0px;
 }
-.top{
+
+.top {
     position: absolute;
     right: 20px;
     top: 352vh;

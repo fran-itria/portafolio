@@ -1,4 +1,4 @@
-.nav{
+.nav {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -10,12 +10,14 @@
     box-shadow: 0 -4px rgb(255, 139, 139);
 }
 
-.name{
+.name {
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 30px;
 }
-.elements{
+
+.elements {
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -24,31 +26,35 @@
     justify-content: space-between;
 }
 
-.github{
+.github {
     color: white;
     padding: 5px;
     transition: 1s;
 }
-.github:hover{
+
+.github:hover {
     color: black;
     transition: 0.5s;
 }
-.linkedin{
+
+.linkedin {
     color: white;
     padding: 5px;
     transition: 0.5s
 }
-.linkedin:hover{
+
+.linkedin:hover {
     color: #0e76a8;
     transition: 0.5s;
 }
 
-.gmail{
+.gmail {
     color: white;
     padding: 5px;
     transition: 0.5s
 }
-.gmail:hover{
+
+.gmail:hover {
     color: #c71610;
     transition: 0.5s;
 }
