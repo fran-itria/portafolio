@@ -1,4 +1,4 @@
-.conteiner{
+.conteiner {
     background: rgb(75, 0, 0);
     display: flex;
     flex-direction: column;
@@ -6,51 +6,183 @@
     justify-content: center;
     height: 100vh;
 }
-.info{
+
+.info {
     width: 990px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 10px;
 }
-.info p{
+
+.info p {
     font-size: 25px;
     color: rgb(255, 151, 151);
     text-shadow: 0px 0px 20px rgb(255, 255, 255);
     margin-top: 5px;
 }
 
-.title{
-   border-bottom: solid rgb(255, 139, 139) 5px;
-   font-size: 40px;
-   margin-bottom: 10px;
-   width: fit-content;
-}
-
-.skills{
+.skills {
     font-size: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 60px;
+    column-gap: 0px;
     row-gap: 30px;
 }
 
-.skills div{
+.skills div {
     background: linear-gradient(to right, rgb(184, 184, 184), rgb(145, 145, 145));
     border-radius: 10px;
-    padding: 20px;
+    padding: 5px;
     transition: 1s;
-    width: 250px;
+    width: 200px;
     box-shadow: 0px 0px 25px 0px rgb(255, 0, 0);
 }
-.skills div:hover{
+
+.skills div:hover {
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(192, 192, 192));
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.skills p{
-    font-size: 50px;
+.skills p {
+    font-size: 40px;
     margin: 0;
     color: black;
+}
+
+.html {
+    width: 100px;
+    height: 100px;
+    color: #f06529
+}
+
+.css {
+    width: 100px;
+    height: 100px;
+    color: #264de4
+}
+
+.js {
+    width: 100px;
+    height: 100px;
+    color: #f0db4f
+}
+
+.react {
+    width: 100px;
+    height: 100px;
+    color: #7cc5d9
+}
+
+.next {
+    width: 100px;
+    height: 100px;
+}
+
+.node {
+    width: 100px;
+    height: 100px;
+    color: #3c873a
+}
+
+.sql {
+    width: 100px;
+    height: 100px;
+    color: #2379BD
+}
+
+.ts {
+    width: 100px;
+    height: 100px;
+    color: #007acc
+}
+
+.git {
+    width: 100px;
+    height: 100px;
+    color: #f34f29
+}
+
+@media (max-width: 425px) {
+    .conteiner {
+        height: 100%;
+        width: 425px;
+    }
+
+    .info {
+        width: 425px;
+        align-items: center;
+    }
+
+    .info p {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 10px;
+    }
+
+    .skills div {
+        width: 143px;
+        height: 100px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills p {
+        font-size: 18px;
+    }
+
+    .html {
+        width: 50px;
+        height: 50px;
+    }
+
+    .css {
+        width: 50px;
+        height: 50px;
+    }
+
+    .js {
+        width: 50px;
+        height: 50px;
+    }
+
+    .react {
+        width: 50px;
+        height: 50px;
+    }
+
+    .next {
+        width: 50px;
+        height: 50px;
+    }
+
+    .node {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sql {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ts {
+        width: 50px;
+        height: 50px;
+    }
+
+    .git {
+        width: 50px;
+        height: 50px;
+    }
 }
