@@ -1,4 +1,4 @@
-.nav{
+.nav {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -8,28 +8,72 @@
     box-shadow: 0 4px rgb(255, 139, 139);
     color: white;
     width: 100%;
+    height: 70px;
 }
 
-.name{
+
+.name {
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 30px;
 }
-.elements{
+
+.elements {
     margin-right: 50px;
     width: 30%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.button{
-    text-decoration: none;
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-weight: bold;
 }
-.active{
-    text-decoration: none;
+
+.button:hover {
     color: white;
-    font-weight: bold;
-    border-bottom: solid rgb(206, 0, 0) 3px;
+}
+
+p {
+    margin: 0px;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width: 425px) {
+    .nav {
+        width: 425px;
+        height: 50px;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .name {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .elements {
+        align-items: center;
+        justify-content: space-around;
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    .pNav {
+        display: none;
+    }
+
+    .icons {
+        width: 30px;
+        height: 30px;
+    }
 }
