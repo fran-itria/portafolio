@@ -13,6 +13,7 @@ export default function Contact() {
   const [errors, setErrors] = useState();
   const URL_BASE =
     "https://portafolio-back-3gdb.onrender.com" || "http://localhost:3001";
+  const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{3}$/i;
 
   const validate = (inputs, setErrors) => {
     let error = {};
@@ -20,17 +21,17 @@ export default function Contact() {
 
     if (inputs.name.length == 0) {
       error.name = "Campo obligatorio";
-    } else delete error.name;
+    }
 
     if (inputs.email.length == 0) {
       error.email = "Campo obligatorio";
     } else if (!regexEmail.test(inputs.email)) {
       error.email = "Debe ser un correo válido";
-    } else delete error.email;
+    }
 
     if (inputs.message.length == 0) {
       error.message = "Campo obligatorio";
-    } else delete error.message;
+    }
 
     setErrors(error);
   };
@@ -45,7 +46,6 @@ export default function Contact() {
 
   const submit = async (event) => {
     event.preventDefault();
-    // window.alert('Método para contactarte no implementado aún')
     const response = await axios.post(`${URL_BASE}/contact`, inputs);
     if (response.status == 200) window.alert("Mensaje enviado exitosamente");
   };
@@ -66,13 +66,15 @@ export default function Contact() {
               className={errors && errors.name ? style.inputError : style.input}
               autoComplete="on"
             ></input>
-            {errors && errors.name ? (
-              <div className={style.error}>
+            <div
+              className={inputs.name == 0 ? style.error : style.errorDisabled}
+            >
+              {errors && errors.name ? (
                 <b> * {errors.name} </b>
-              </div>
-            ) : (
-              <></>
-            )}
+              ) : (
+                <b> * Error</b>
+              )}
+            </div>
           </div>
           <div>
             <label className={style.label}>Correo: </label>
@@ -86,39 +88,49 @@ export default function Contact() {
               placeholder="ejemplo@gmail.com"
               autoComplete="on"
             ></input>
-            {errors && errors.email ? (
-              <div className={style.error}>
-                <b> * {errors.email} </b>
-              </div>
-            ) : (
-              <></>
-            )}
+            <div
+              className={
+                !regexEmail.test(inputs.email)
+                  ? style.error
+                  : style.errorDisabled
+              }
+            >
+              {errors && errors.email ? (
+                <b> * {errors.email}</b>
+              ) : (
+                <b> * Error</b>
+              )}
+            </div>
           </div>
         </div>
         <div className={style.mensaje}>
-          <label className={style.label}>Mensaje: </label>
+          <label className={style.labelMessage}>Mensaje: </label>
           <textarea
             className={errors && errors.message ? style.areaError : style.area}
             name="message"
             onChange={(event) => handleInput(event)}
             spellCheck="true"
           ></textarea>
-          {errors && errors.message ? (
-            <div className={style.errorMensaje}>
+          <div
+            className={
+              inputs.message == 0 ? style.errorMessage : style.errorDisabled
+            }
+          >
+            {errors && errors.message ? (
               <b> * {errors.message} </b>
-            </div>
-          ) : (
-            <></>
-          )}
+            ) : (
+              <b> * Error</b>
+            )}
+          </div>
         </div>
         <div className={style.button}>
           {errors && Object.keys(errors).length > 0 ? (
             <button type="submit" disabled className={style.enviar}>
-              Enviar mensaje
+              Enviar
             </button>
           ) : (
             <button type="submit" className={style.enviar}>
-              Enviar mensaje
+              Enviar
             </button>
           )}
         </div>

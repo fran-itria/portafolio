@@ -18,6 +18,7 @@
 .header {
     width: 40%;
     display: flex;
+    margin-top: 5px;
 }
 
 .form {
@@ -37,6 +38,14 @@
 }
 
 .label {
+    width: 40%;
+    text-align: left;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.labelMessage {
     width: 40%;
     text-align: left;
     font-size: 21px;
@@ -95,7 +104,12 @@
     margin-top: 10px;
 }
 
-.errorMensaje {
+.errorDisabled {
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.errorMessage {
     width: 40%;
     text-align: left;
     margin-top: 10px;
@@ -111,6 +125,7 @@
     font-weight: bold;
     color: black;
     box-shadow: 0 -5px rgb(0, 128, 0);
+    width: 80px;
 }
 
 .enviar:hover {
@@ -135,4 +150,87 @@
     position: absolute;
     right: 20px;
     top: 352vh;
+}
+
+@media (max-width: 425px) {
+    .contact {
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        width: fit-content;
+    }
+
+    .form {
+        justify-content: flex-start;
+    }
+
+    .info {
+        width: fit-content;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .info div {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .label {
+        width: 86px;
+    }
+
+    .labelMessage {
+        width: 287px;
+    }
+
+    .input {
+        width: 180px;
+    }
+
+    .inputError {
+        width: 180px;
+    }
+
+    .area {
+        width: 287px;
+        border-radius: 10px;
+    }
+
+    .areaError {
+        width: 287px;
+        border-radius: 10px;
+    }
+
+    .errorMensaje {
+        width: 287px;
+        text-align: left;
+    }
+
+    .enviar {
+        margin-top: 0px;
+        width: 80px;
+    }
+
+    .error {
+        width: 287px;
+        text-align: left;
+    }
+
+    .errorMessage {
+        width: 287px;
+    }
+
+    .enviar:disabled {
+        margin-top: 0px;
+    }
+
+    .button {
+        width: 287px;
+        margin-top: 5px;
+    }
 }
