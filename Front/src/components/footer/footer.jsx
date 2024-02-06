@@ -10,13 +10,13 @@ export default function Footer() {
       <h1 className={style.name}>Franco Itria</h1>
       <div className={style.elements}>
         <a href="https://github.com/fran-itria" target="_blank">
-          <IoLogoGithub size={40} className={style.github} />
+          <IoLogoGithub className={style.github} />
         </a>
         <a href="https://www.linkedin.com/in/francoitria/" target="_blank">
-          <FaLinkedinIn size={40} className={style.linkedin} />
+          <FaLinkedinIn className={style.linkedin} />
         </a>
         <a href="mailto:francoitria01@gmail.com">
-          <SiGmail size={40} className={style.gmail} />
+          <SiGmail className={style.gmail} />
         </a>
       </div>
     </footer>

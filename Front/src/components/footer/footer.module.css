@@ -30,6 +30,8 @@
     color: white;
     padding: 5px;
     transition: 1s;
+    width: 40px;
+    height: 40px;
 }
 
 .github:hover {
@@ -40,21 +42,64 @@
 .linkedin {
     color: white;
     padding: 5px;
-    transition: 0.5s
+    transition: 0.5s;
+    width: 40px;
+    height: 40px;
 }
 
 .linkedin:hover {
     color: #0e76a8;
     transition: 0.5s;
+    width: 40px;
+    height: 40px;
 }
 
 .gmail {
     color: white;
     padding: 5px;
-    transition: 0.5s
+    transition: 0.5s;
+    width: 40px;
+    height: 40px;
 }
 
 .gmail:hover {
     color: #c71610;
     transition: 0.5s;
+}
+
+@media (max-width: 425px) {
+    .nav {
+        justify-content: space-evenly;
+    }
+
+    .name {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .github {
+        width: 25px;
+        height: 25px;
+        padding: 0px;
+    }
+
+    .linkedin {
+        width: 25px;
+        height: 25px;
+        padding: 0px;
+    }
+
+    .gmail {
+        width: 25px;
+        height: 25px;
+        padding: 0px;
+    }
+
+    .elements {
+        margin-right: 0px;
+    }
+
+    .elements a {
+        display: flex;
+    }
 }
