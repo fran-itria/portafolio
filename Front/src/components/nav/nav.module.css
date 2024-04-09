@@ -50,7 +50,7 @@ p {
 
 @media(max-width: 768px) {
     .nav {
-        width: 426px;
+        width: 100%;
         justify-content: space-around;
     }
 
