@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0098cffe.css",
+    "main.js": "/static/js/main.1ee5ac00.js",
+    "static/js/787.ae0d8d37.chunk.js": "/static/js/787.ae0d8d37.chunk.js",
+    "static/media/Me.jpg": "/static/media/Me.2dbf699e26d7305c3cf5.jpg",
+    "static/media/Empanadas.png": "/static/media/Empanadas.3059d9f9c5f218682320.png",
+    "static/media/ToolMatch.png": "/static/media/ToolMatch.f7d638f9b8d9b1ea0281.png",
+    "static/media/RickAndMorty.jpg": "/static/media/RickAndMorty.e03daa6488213fc125f3.jpg",
+    "static/media/Pokemon.jpg": "/static/media/Pokemon.48212ed01565e44107a3.jpg",
+    "index.html": "/index.html",
+    "main.0098cffe.css.map": "/static/css/main.0098cffe.css.map",
+    "main.1ee5ac00.js.map": "/static/js/main.1ee5ac00.js.map",
+    "787.ae0d8d37.chunk.js.map": "/static/js/787.ae0d8d37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0098cffe.css",
+    "static/js/main.1ee5ac00.js"
+  ]
+}
