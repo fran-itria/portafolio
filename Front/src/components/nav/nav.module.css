@@ -48,6 +48,32 @@ p {
     height: 40px;
 }
 
+@media(max-width: 768px) {
+    .nav {
+        width: 426px;
+        justify-content: space-around;
+    }
+
+    .name {
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .elements {
+        width: 200px;
+        margin-right: 0px;
+    }
+
+    .pNav {
+        display: none;
+    }
+
+    .icons {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 @media(max-width: 425px) {
     .nav {
         width: 425px;

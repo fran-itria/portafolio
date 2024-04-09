@@ -15,7 +15,7 @@ import { BsGit } from "react-icons/bs";
 export default function Skills() {
   return (
     <section id="skills" className={style.conteiner}>
-      <div>
+      <div className={style.div}>
         <div className={style.info}>
           <h1 className="title">Habilidades</h1>
           <p>// Tecnologias con las que he trabajado</p>

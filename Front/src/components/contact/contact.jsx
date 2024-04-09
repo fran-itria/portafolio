@@ -113,13 +113,15 @@ export default function Contact() {
           ></textarea>
           <div
             className={
-              inputs.message == 0 ? style.errorMessage : style.errorDisabled
+              inputs.message == 0
+                ? style.errorMessage
+                : style.errorMessageDisabled
             }
           >
             {errors && errors.message ? (
               <b> * {errors.message} </b>
             ) : (
-              <b> * Error</b>
+              <b> * Error </b>
             )}
           </div>
         </div>

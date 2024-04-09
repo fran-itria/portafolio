@@ -67,9 +67,47 @@
     transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+    .nav {
+        height: 60px;
+        justify-content: space-around;
+    }
+
+    .name {
+        font-size: 30px;
+        margin: 0px;
+        height: 36px;
+    }
+
+    .elements {
+        margin: 0;
+        height: auto;
+    }
+
+    .github {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+    }
+
+    .linkedin {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+    }
+
+    .gmail {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+    }
+}
+
 @media (max-width: 425px) {
     .nav {
         justify-content: space-evenly;
+        width: 425px;
+        height: auto;
     }
 
     .name {

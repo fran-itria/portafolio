@@ -33,7 +33,6 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
-    /* border: solid white 2px; */
     border-radius: 20px 0 0 20px;
     width: 80%;
     background-color: rgb(75, 0, 0);
@@ -97,6 +96,60 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: fit-content;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .proyect {
+        margin-bottom: 0;
+    }
+
+    .info {
+        width: auto;
+        height: auto;
+        box-shadow: none;
+        margin: 0px 5px 20px 5px;
+        border-radius: 20px;
+    }
+
+    .proyect img {
+        display: none;
+    }
+
+    .text {
+        align-items: center;
+        height: 165px;
+    }
+
+    .titleProyect {
+        margin: 0;
+    }
+
+    .description {
+        width: auto;
+        margin-top: 0;
+        overflow: auto;
+        line-height: 1.6;
+    }
+
+    .pTecno {
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .pTecnoTool {
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {
