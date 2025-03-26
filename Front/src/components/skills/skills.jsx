@@ -8,8 +8,10 @@ import {
   SiReact,
   SiSequelize,
   SiTypescript,
+  SiTailwindcss,
+  SiPython,
+  SiAstro
 } from "react-icons/si";
-import {} from "react-icons/bi";
 import { BsGit } from "react-icons/bs";
 
 export default function Skills() {
@@ -56,6 +58,18 @@ export default function Skills() {
           <div>
             <BsGit className={style.git} />
             <p> Git </p>
+          </div>
+          <div>
+            <SiTailwindcss className={style.tailwind} />
+            <p> TailwindCss </p>
+          </div>
+          <div>
+            <SiPython className={style.python} />
+            <p> Python </p>
+          </div>
+          <div>
+            <SiAstro className={style.astro} />
+            <p> Astro </p>
           </div>
         </div>
       </div>

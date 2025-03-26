@@ -26,7 +26,7 @@ export default function Proyects() {
                 <div className={style.tecnologias}>
                   <p
                     className={
-                      title == "ToolMatch" ? style.pTecnoTool : style.pTecno
+                      title == "ToolMatch" || title == "Pro Active Center" ? style.pTecnoTool : style.pTecno
                     }
                   >
                     <b>Tecnologias:</b> {tecnologias}

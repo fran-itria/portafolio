@@ -12,23 +12,22 @@ export default function About() {
         <p className={style.text}>
           Estoy encantado de tener la oportunidad de presentarme ante ustedes.
           <br></br>
-          Soy Franco Itria, tengo 22 años y en julio de 2023 completé con éxito
-          un curso intensivo de <b> Full Stack Developer </b>
-          en Soy Henry. <br></br>
-          Adquirí una sólida comprensión de las tecnologías más utilizadas en el
-          desarrollo web, desde el front-end hasta el back-end, tuve la
-          oportunidad de adquirir una amplia gama de habilidades técnicas.
-          Aprendí sobre diferentes tecnologías y lenguajes de programación como{" "}
-          <b>
-            {" "}
-            HTML, CSS, JavaScript, Node.js, Express.js y bases de datos
-          </b>. <br></br>
-          También trabajé en proyectos en equipo, lo que me permitió desarrollar
-          habilidades de colaboración y gestión de proyectos. <br></br>
-          Ahora, como profesional de desarrollo <b> Full Stack </b>, mi objetivo
-          es continuar aprendiendo, actualmente me encuentro cursando una{" "}
-          <b>Tecnicatura en Desarrollo Web </b>
-          para profundizar mis conocimientos y habilidades en esta área.
+          Soy Franco Itria, tengo 23 años y me enncuentro en la etapa final
+          de la carrera de <b>Tecnicatura en Desarrollo Web</b> en la Universidad
+          Nacional de Entre Ríos.<br></br>
+          Mis habilidades y conocimientos abarcan el desarrollo de software y el diseño web. En el
+          desarrollo, tengo experiencia con <b>HTML, CSS, Tailwind, JavaScript, TypeScript, Python,
+          React, Redux, Next.js, Astro, Node.js, Express, PostgreSQL y Sequelize</b>. Por otro lado,
+          mis conocimientos en diseño gráfico me permiten utilizar Figma de manera eficiente para
+          crear interfaces visualmente atractivas y funcionales.
+          Considero fundamental destacar mis habilidades blandas: comunicación efectiva, trabajo
+          en equipo, adaptabilidad, resolución de problemas, gestión del tiempo, pensamiento
+          crítico, proactividad, empatía y resiliencia.
+          <br></br>
+          Recientemente finalice un proyecto de gestion de gimnasios utilizando las tecnologias 
+          mencionadas anteriormente. <br></br>
+          Actualmente me enceuntro desarrollando una apliacion de gestión para una liga de futbol
+          amateur utilizando <b>React Native y Firebase</b>
         </p>
       </div>
     </section>
