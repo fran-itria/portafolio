@@ -8,13 +8,17 @@ export default function About() {
     <section id="about" className={style.about}>
       <img src={imagen} className={style.img} />
       <div className={style.info}>
-        <h1 className="title">Sobre mí</h1>
+        <h1 className="title">Sobre mí</h1>           
+        <div>
         <p className={style.text}>
           Estoy encantado de tener la oportunidad de presentarme ante ustedes.
           <br></br>
+          <br></br>
           Soy Franco Itria, tengo 23 años y me enncuentro en la etapa final
           de la carrera de <b>Tecnicatura en Desarrollo Web</b> en la Universidad
-          Nacional de Entre Ríos.<br></br>
+          Nacional de Entre Ríos.
+          <br></br>
+          <br></br>
           Mis habilidades y conocimientos abarcan el desarrollo de software y el diseño web. En el
           desarrollo, tengo experiencia con <b>HTML, CSS, Tailwind, JavaScript, TypeScript, Python,
           React, Redux, Next.js, Astro, Node.js, Express, PostgreSQL y Sequelize</b>. Por otro lado,
@@ -24,11 +28,15 @@ export default function About() {
           en equipo, adaptabilidad, resolución de problemas, gestión del tiempo, pensamiento
           crítico, proactividad, empatía y resiliencia.
           <br></br>
+          <br></br>
           Recientemente finalice un proyecto de gestion de gimnasios utilizando las tecnologias 
-          mencionadas anteriormente. <br></br>
+          mencionadas anteriormente. 
+          <br></br>
+          <br></br>
           Actualmente me enceuntro desarrollando una apliacion de gestión para una liga de futbol
           amateur utilizando <b>React Native y Firebase</b>
         </p>
+        </div>
       </div>
     </section>
   );

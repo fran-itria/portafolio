@@ -25,6 +25,12 @@
     color: rgb(255, 255, 255);
 }
 
+.info div {
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 b {
     color: rgb(255, 140, 140);
 }
@@ -40,6 +46,7 @@ b {
     margin-top: 0px;
     width: 70%;
     font-size: 20px;
+    text-align: start;
 }
 
 @media (max-width: 768px) {
@@ -71,12 +78,17 @@ b {
         width: 425px;
     }
 
+    .info h1 {
+        margin: 5px;
+    }
+
     .img {
-        height: 150px;
-        width: 120px;
+        height: 140px;
+        width: 110px;
         margin-left: 0px;
         padding: 4px;
         margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     .text {

@@ -73,12 +73,6 @@
         justify-content: space-around;
     }
 
-    .name {
-        font-size: 30px;
-        margin: 0px;
-        height: 36px;
-    }
-
     .elements {
         margin: 0;
         height: auto;
@@ -107,7 +101,7 @@
     .nav {
         justify-content: space-evenly;
         width: 425px;
-        height: auto;
+        align-items: center;
     }
 
     .name {
