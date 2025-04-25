@@ -73,42 +73,19 @@
         justify-content: space-around;
     }
 
-    .elements {
-        margin: 0;
-        height: auto;
-    }
-
-    .github {
-        width: 30px;
-        height: 30px;
-        padding: 0px;
-    }
-
-    .linkedin {
-        width: 30px;
-        height: 30px;
-        padding: 0px;
-    }
-
-    .gmail {
-        width: 30px;
-        height: 30px;
-        padding: 0px;
-    }
-}
-
-@media (max-width: 425px) {
-    .nav {
-        justify-content: space-evenly;
-        width: 425px;
-        align-items: center;
-    }
-
     .name {
         font-size: 20px;
         margin: 0px;
     }
 
+    .elements {
+        margin-right: 0;
+    }
+
+    .elements a {
+        display: flex;
+    }
+
     .github {
         width: 25px;
         height: 25px;
@@ -125,13 +102,5 @@
         width: 25px;
         height: 25px;
         padding: 0px;
-    }
-
-    .elements {
-        margin-right: 0px;
-    }
-
-    .elements a {
-        display: flex;
     }
 }

@@ -21,7 +21,7 @@ export default function About() {
           <br></br>
           Mis habilidades y conocimientos abarcan el desarrollo de software y el diseño web. En el
           desarrollo, tengo experiencia con <b>HTML, CSS, Tailwind, JavaScript, TypeScript, Python,
-          React, Redux, Next.js, Astro, Node.js, Express, PostgreSQL y Sequelize</b>. Por otro lado,
+          React, Redux, Next.js, Astro, Node.js, Express, PostgreSQL y Sequelize.</b> Por otro lado,
           mis conocimientos en diseño gráfico me permiten utilizar Figma de manera eficiente para
           crear interfaces visualmente atractivas y funcionales.
           Considero fundamental destacar mis habilidades blandas: comunicación efectiva, trabajo
@@ -34,7 +34,7 @@ export default function About() {
           <br></br>
           <br></br>
           Actualmente me enceuntro desarrollando una apliacion de gestión para una liga de futbol
-          amateur utilizando <b>React Native y Firebase</b>
+          amateur utilizando <b>React Native y Firebase.</b>
         </p>
         </div>
       </div>
