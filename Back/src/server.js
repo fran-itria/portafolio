@@ -29,7 +29,7 @@ server.post("/contact", async (req, res) => {
   try {
     const mail = {
       from: email,
-      to: process.env.USER,
+      to: process.env.NM_USER,
       subject: "Contacto",
       replyTo: email,
       html: `
