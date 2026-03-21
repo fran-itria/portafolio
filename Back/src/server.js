@@ -1,8 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const transporter = require("./index");
+const { Resend } = require("resend");
 const server = express();
 const PORT = process.env.PORT;
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 server.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Credentials", true);
@@ -27,24 +30,24 @@ server.use(express.json());
 server.post("/contact", async (req, res) => {
   const { email, name, message } = req.body;
   try {
-    const mail = {
-      from: email,
-      to: process.env.NM_USER,
-      subject: "Contacto",
-      replyTo: email,
-      html: `
-          <p style="color: black"> 
-          ${message}
-          </p>
-          <h4 style="color: black">
-            Atentamente, ${name}
-          </h4>
-            `,
-    };
-    await transporter.sendMail(mail);
-    res.status(200).json({ Message: "Correo enviado" });
+    const data = await resend.emails.send(
+      {
+        from: "Franco Itria Portafolio <contacto@mail.francoitria.com>",
+        to: ["francoitria2001@gmail.com"],
+        html: `
+                        <p style="color: black"> 
+                        ${message}
+                        </p>
+                        <h4 style="color: black">
+                          Atentamente, ${name}
+                        </h4>
+                      `,
+        subject: "Nuevo mensaje de contacto",
+        replyTo: email
+      })
+    res.status(200).json({ message: "Email sent successfully", data });
   } catch (error) {
-    res.status(400).json(error);
+    res.status(500).json({ message: "Error sending email", error });
   }
 });
 
