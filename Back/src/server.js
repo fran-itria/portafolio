@@ -3,6 +3,7 @@ const cors = require("cors");
 const transporter = require("./index");
 const { Resend } = require("resend");
 const server = express();
+process.loadEnvFile()
 const PORT = process.env.PORT;
 
 const resend = new Resend(process.env.RESEND_API_KEY);
